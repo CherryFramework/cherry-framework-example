@@ -15,6 +15,10 @@
 // Path to the installer Cherry Framework core.
 $setup_file = get_template_directory() . '/cherry-framework/setup.php';
 
+if ( ! file_exists( $setup_file ) ) {
+	return;
+}
+
 // Load Cherry Framework core - below hooks and their priorities are very important.
 add_action( 'after_setup_theme', require( $setup_file ),          0 );
 add_action( 'after_setup_theme', 'your_prefix_get_core',          1 );
@@ -383,7 +387,7 @@ function your_prefix_init_modules() {
 /**
  * Callback-function that printed breadcrumbs.
  *
- * You'll have to add it manually in your template files (recommended in header.php).
+ * You'll have to add it manually in your template file (recommended in header.php).
  */
 function your_prefix_site_breadcrumbs() {
 	$customizer  = your_prefix_get_core()->modules['cherry-customizer'];
