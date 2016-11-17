@@ -1,0 +1,14 @@
+.breadcrumbs {
+	font-style: $breadcrumbs_font_style;
+	font-weight: $breadcrumbs_font_weight;
+	font-size: $breadcrumbs_font_size{px};
+	line-height: $breadcrumbs_line_height;
+	font-family: @font_family( $breadcrumbs_font_family );
+	color: $breadcrumbs_text_color;
+	background-color: $breadcrumbs_bg_color;
+}
+
+.breadcrumbs__item-link,
+.breadcrumbs__item-link:visited {
+	color: $breadcrumbs_link_color;
+}
