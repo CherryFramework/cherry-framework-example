@@ -1,5 +1,5 @@
 # Example using Cherry Framework V
-This is an example to show how [Cherry Framework V](https://github.com/CherryFramework/cherry-framework) works.
+This is an example to how [Cherry Framework V](https://github.com/CherryFramework/cherry-framework) works (*framework sources should be included in the theme for proper operation*).
 
 ## How to use?
 1. Copy `cherry-framework-example` directory to your theme root
